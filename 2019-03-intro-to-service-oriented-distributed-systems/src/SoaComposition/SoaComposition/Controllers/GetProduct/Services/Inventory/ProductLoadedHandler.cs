@@ -1,8 +1,8 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Handyman.Mediator;
+﻿using Handyman.Mediator;
 using SoaComposition.Clients.Inventory;
 using SoaComposition.Controllers.GetProduct.Events;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace SoaComposition.Controllers.GetProduct.Services.Inventory
 {
@@ -17,7 +17,14 @@ namespace SoaComposition.Controllers.GetProduct.Services.Inventory
 
       public async Task Handle(ProductLoadedEvent @event, CancellationToken cancellationToken)
       {
-         @event.Product.Inventory = await _client.GetInventory(@event.Product.Id);
+         try
+         {
+            @event.Product.Inventory = await _client.GetInventory(@event.Product.Id);
+         }
+         catch
+         {
+            @event.Product.Inventory = "?";
+         }
       }
    }
 }
