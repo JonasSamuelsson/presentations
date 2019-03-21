@@ -1,7 +1,7 @@
 ﻿using Handyman.Mediator;
 using Microsoft.AspNetCore.Mvc;
-using SoaComposition.Controllers.Features.GetProduct.DataContracts.Output;
 using System.Threading.Tasks;
+using SoaComposition.Controllers.GetProduct.DataContracts;
 
 namespace SoaComposition.Controllers
 {

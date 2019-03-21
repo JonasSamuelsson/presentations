@@ -1,11 +1,11 @@
-﻿using Handyman.Mediator;
-using SoaComposition.Clients.ProductCatalog;
-using SoaComposition.Controllers.Features.GetProduct.DataContracts.Output;
-using SoaComposition.Controllers.Features.GetProduct.Events;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
+using Handyman.Mediator;
+using SoaComposition.Clients.ProductCatalog;
+using SoaComposition.Controllers.GetProduct.DataContracts;
+using SoaComposition.Controllers.GetProduct.Events;
 
-namespace SoaComposition.Controllers.GetProduct
+namespace SoaComposition.Controllers.GetProduct.Services.ProductCatalog
 {
    public class GetProductHandler : IRequestHandler<GetProductRequest, Product>
    {

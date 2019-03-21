@@ -1,10 +1,10 @@
-﻿using Handyman.Mediator;
-using SoaComposition.Clients.Inventory;
-using SoaComposition.Controllers.Features.GetProduct.Events;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
+using Handyman.Mediator;
+using SoaComposition.Clients.Inventory;
+using SoaComposition.Controllers.GetProduct.Events;
 
-namespace SoaComposition.Controllers.Features.GetProduct.Services.Inventory
+namespace SoaComposition.Controllers.GetProduct.Services.Inventory
 {
    public class ProductLoadedHandler : IEventHandler<ProductLoadedEvent>
    {

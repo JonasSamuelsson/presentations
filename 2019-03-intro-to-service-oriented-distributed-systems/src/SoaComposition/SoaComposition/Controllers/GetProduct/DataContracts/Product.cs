@@ -1,4 +1,4 @@
-﻿namespace SoaComposition.Controllers.Features.GetProduct.DataContracts.Output
+﻿namespace SoaComposition.Controllers.GetProduct.DataContracts
 {
    public class Product
    {
