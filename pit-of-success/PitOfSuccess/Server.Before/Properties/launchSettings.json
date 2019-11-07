@@ -1,0 +1,25 @@
+﻿{
+   "$schema": "http://json.schemastore.org/launchsettings.json",
+   "iisSettings": {
+      "windowsAuthentication": false,
+      "iisExpress": {
+         "applicationUrl": "http://localhost:59652",
+         "sslPort": 0
+      }
+   },
+   "profiles": {
+      "IIS Express": {
+         "commandName": "IISExpress",
+         "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+         }
+      },
+      "Server.Before": {
+         "commandName": "Server.Before - Kestrel",
+         "applicationUrl": "http://localhost:59652",
+         "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+         }
+      }
+   }
+}
